@@ -28,12 +28,12 @@ public class QuickSort
     o[x] = o[y];
     o[y] = tmp;
   }
-  public static void printToCSV(MatrixFinder test, int[][] testedMatrix, int target){
+  public static void printToCSV( int[] r){
       //System.out.println("target, size (nanos), size");
       long pre = System.nanoTime();
-      test.isThere(testedMatrix, target);
-  long current = System.nanoTime();
-      System.out.println(target + ", " + testedMatrix.length + ", " + (current-pre));
+      qsort(r); 
+      long current = System.nanoTime();
+      System.out.println(target + ", " + r.length + ", " + (current-pre));
   }
 
   //print input array
