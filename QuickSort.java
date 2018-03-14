@@ -30,8 +30,11 @@ public class QuickSort
   }
   public static void printToCSV( int[] r){
       //System.out.println("target, size (nanos), size");
+      //System.out.println("length of array, time");
       long pre = System.nanoTime();
+
       qsort(r);
+
       long current = System.nanoTime();
       System.out.println( r.length + ", " + (current-pre));
   }

@@ -14,7 +14,8 @@ public class QuickSortTester {
   public static void main(String[] args) {
     QuickSort g=new QuickSort();
     int j=2000;
-  for(;j<40000; j+=500) {
+    System.out.println("length of array, time");
+  for(;j<40000; j+=100) {
     // arrays of randomly generated ints
     int[] arrMatey = new int[j];
     for( int i = 0; i < arrMatey.length; i++ ) {
