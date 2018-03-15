@@ -15,6 +15,7 @@ public class QuickSortTester {
     QuickSort g=new QuickSort();
     int j=2000;
     System.out.println("length of array, time");
+    //test normal case scenario
   for(;j<40000; j+=100) {
     // arrays of randomly generated ints
     int[] arrMatey = new int[j];
@@ -23,5 +24,7 @@ public class QuickSortTester {
     }
     g.printToCSV(arrMatey);
   }
+  //worst case sceneario(list ir sorted IN REVERSE)
+  //best case scenario 
   }
 }
